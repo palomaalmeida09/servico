@@ -19,9 +19,10 @@ from rest_framework import routers
 
 from api import views
 router = routers.DefaultRouter()
-router.register(r'artistas', views.ArtistaViewSet)
-router.register(r'albuns', views.AlbumViewSet)
-router.register(r'musicas', views.MusicaViewSet)
+router.register(r'user', views.UserViewSet)
+router.register(r'todo', views.TodoViewSet)
+router.register(r'comment', views.CommentViewSet)
+router.register(r'post', views.PostViewSet)
 
 # Wire up our API using automatic URL routing.
 urlpatterns = [
@@ -30,8 +31,3 @@ urlpatterns = [
 ]
 
 urlpatterns += router.urls
-
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-]

@@ -1,8 +1,9 @@
 from django.contrib import admin
 
-from .models import Artista, Album, Musica
+from .models import User, Todo, Comment, Post
 
-admin.site.register(Artista)
-admin.site.register(Album)
-admin.site.register(Musica)
+admin.site.register(User)
+admin.site.register(Todo)
+admin.site.register(Comment)
+admin.site.register(Post)
 # Register your models here.
