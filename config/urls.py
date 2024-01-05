@@ -18,11 +18,13 @@ from django.urls import path, include
 from rest_framework import routers
 
 from api import views
+
+
 router = routers.DefaultRouter()
-router.register(r'user', views.UserViewSet)
-router.register(r'todo', views.TodoViewSet)
-router.register(r'comment', views.CommentViewSet)
-router.register(r'post', views.PostViewSet)
+router.register(r'users', views.UserViewSet)
+router.register(r'todos', views.TodoViewSet)
+router.register(r'comments', views.CommentViewSet)
+router.register(r'posts', views.PostViewSet)
 
 # Wire up our API using automatic URL routing.
 urlpatterns = [

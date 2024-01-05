@@ -6,4 +6,3 @@ admin.site.register(User)
 admin.site.register(Todo)
 admin.site.register(Comment)
 admin.site.register(Post)
-# Register your models here.
